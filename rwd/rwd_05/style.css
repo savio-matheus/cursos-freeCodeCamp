@@ -1,0 +1,176 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#navbar {
+	position: fixed;
+	background-color: #5998C5;
+	width: 100%;
+	padding: 1rem 2rem 1rem 0rem;
+	text-align: right;
+}
+
+a {
+	font-family: "Verdana", sans-serif;
+	font-size: 1.1rem;
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	transform: translateY(5px);
+}
+
+#navbar > a {
+	padding-left: 2rem;
+	color: black;
+}
+
+#welcome-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #5998C5;
+	height: 100vh;
+}
+
+h1, h2 {
+	font-family: 'Cabin', sans-serif;
+	text-align: center;
+	font-weight: 100;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-family: 'Cabin', sans-serif;
+	text-align: center;
+	font-weight: 100;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+p {
+	font-family: Quicksand, sans-serif;
+	font-size: 1.5rem;
+}
+
+#welcome-section > h1 {
+	font-size: 5rem;
+}
+
+#welcome-section > p {
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+#welcome-section > a > img {
+	width: 1.5rem;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.projects-section {
+	background-color: #fff;
+	padding-bottom: 2rem;
+}
+
+.projects-section > h2{
+	padding: 4rem 2rem 2rem 2rem;
+}
+
+.projects-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	gap: 3rem;
+	width: 100%;
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 1rem 0rem;
+}
+
+.project-tile {
+	display: grid;
+	grid-auto-columns: 2fr 3fr;
+	background-color: #CFFFB0;
+	width: 100%;
+}
+
+.project-tile > img {
+	display: block;
+	object-fit: cover;
+	max-width: 100%;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	margin: auto 0;
+	padding: 1rem;
+}
+
+.project-description {
+	padding: 1.5rem;
+	text-align: justify;
+	grid-column-start: 2;
+}
+
+.project-tile > div > p {
+	font-size: 1.4rem;
+	padding-bottom: .5rem;
+}
+
+.project-tile > div {
+	padding: 1rem;
+}
+
+@media (max-width: 680px) {
+	.project-section {
+		padding: 4rem 0rem 0rem 2rem;
+	}
+
+	.projects-container {
+		max-width: 100%;
+	}
+
+	.project-tile {
+		display: block;
+	}
+
+	.project-tile > img {
+		padding: 0;
+	}
+}
+
+.contacts {
+	background-color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 60vh;
+}
+
+.contact-links {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1rem 1rem;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #58355E;
+	height: 10vh;
+}
+
+footer > p {
+	color: white;
+	font-size: 1rem;
+}

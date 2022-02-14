@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(231, 231, 231);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+	max-width: 60rem;
+	margin: auto;
+	display: grid;
+	justify-content: center;
+}
+
+h1 {
+	text-align: center;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+}
+
+.description {
+	text-align: center;
+}
+
+section {
+	margin: 0rem 0rem 3rem;
+}
+
+#header {
+	padding: 1.5rem 2rem;
+	background: black;
+	position: sticky;
+	top: 0rem;
+	max-width: 100%;
+	overflow: auto;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+}
+
+#header-img {
+	width: 3rem;
+	margin: -1rem;
+	margin-left: 2rem;
+}
+
+#nav-bar {
+	display: flex;
+	column-gap: 1.5rem;
+	margin-right: 2rem;
+}
+
+#nav-bar a {
+	text-decoration: none;
+	color: white;
+}
+
+.img-txt {
+	display: flex;
+	column-gap: 4rem;
+	align-items: center;
+	padding: 1rem;
+}
+.img-txt img {
+	max-width: 5rem;
+}
+
+#how_works {
+	display: flex;
+	justify-content: center;
+}
+
+#pricing {
+	display: flex;
+	column-gap: 2rem;
+	justify-content: center;
+}
+
+.pricing-box {
+	background-color: silver;
+	text-align: center;
+	padding-bottom: 1rem;
+	width: 30%;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.pricing-box > h4 {
+	padding: 1rem;
+}
+
+.pricing-box > p {
+	padding: 1rem;
+}
+
+#buy {
+	margin: 0 auto;
+	max-width: 10rem;;
+	padding: .5rem;
+}
+
+h3 {
+	max-width: 100%;
+	padding: 1.5rem;
+	background-color: black;
+	color: white;
+}
+
+@media (max-width: 50rem) {
+	#pricing {
+		flex-wrap: wrap;
+	}
+}
+
+#newsletter {
+	display: flex;
+	justify-content: center;
+}
+
+#newsletter div {
+	background-color: black;
+	padding: 1.5rem;
+	justify-content: space-evenly;
+	max-width: 30rem;
+	text-align: center;
+	border-radius: 5px;
+}
+
+#newsletter p {
+	padding: 0rem 1rem 1rem 1rem;
+	color: white;
+}
+
+#newsletter input[type=email] {
+	width: 1fr;
+	padding: .5rem;
+	margin-bottom: .5rem;
+}
+
+#newsletter input[type=submit] {
+	width: 2fr;
+	padding: .5rem;
+}
+
+footer {
+	background-color: black;
+	color: white;
+}
+
+#footer-img {
+	max-height: 100%;
+}

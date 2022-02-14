@@ -1,0 +1,68 @@
+html {
+	font-family: monospace;
+	font-size: 1rem;
+	background-color: #fdf6e3;
+}
+
+#title {
+	text-align: center;
+	font-weight: lighter;
+}
+
+#main {
+	margin: 10px 5% 50px;
+}
+
+p {
+	font-size: 1.0rem;
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+#img-div {
+	background-color: #eee8d5;
+	border-radius: 1%;
+	padding: 10px;
+}
+
+#image {
+	max-width: 100%;
+	display: block;
+	height: auto;
+	margin: 0 auto;
+	border-radius: 1%;
+}
+
+#img-caption {
+	font-size: 0.75rem;
+	font-family: monospace;
+}
+
+#tribute-info {
+	font-style: italic;
+	color: #303030;
+	padding: 30px;
+}
+
+#tribute-link {
+	color: #775a08;
+	text-decoration-line: underline;
+}
+#tribute-link:visited {
+	color: #302403;
+}
+
+@media (max-width: 480px) {
+	#main {
+		margin: 0px 0% 50px;
+	}
+}
+@media (min-width: 840px) {
+	#main {
+		margin: auto auto 50px;
+		max-width: 760px;
+	}
+}

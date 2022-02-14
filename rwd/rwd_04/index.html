@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Docs</title>
+	</head>
+  <body>
+    <nav id="navbar">
+      <header>Rust Docs</header>
+      <a href="#introduction" class="nav-link">Introduction</a>
+      <a href="#getting_started" class="nav-link">Getting Started</a>
+      <a href="#Hello,_World!" class="nav-link">Hello, World!</a>
+      <a href="#Hello,_Cargo!" class="nav-link">Hello, Cargo!</a>
+      <a href="#summary" class="nav-link">Summary</a>
+      <a href="#notas" class="nav-link">Notas</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="introduction"><header>Introduction</header>
+        <p>Welcome to The Rust Programming Language, an introductory book about Rust. The Rust programming language helps you write faster, more reliable software. High-level ergonomics and low-level control are often at odds in programming language design; Rust challenges that conflict. Through balancing powerful technical capacity and a great developer experience, Rust gives you the option to control low-level details (such as memory usage) without all the hassle traditionally associated with such control.</p>
+      </section>
+      <section class="main-section" id="getting_started"><header>Getting Started</header>
+        <p>Let’s start your Rust journey! There’s a lot to learn, but every journey starts somewhere. In this chapter, we’ll discuss:
+        <ul>
+          <li>Installing Rust on Linux, macOS, and Windows</li>
+          <li>Writing a program that prints <code>Hello, world!</code></li>
+          <li>Using <code>cargo</code>, Rust’s package manager and build system</li>
+        </ul>
+        </p>
+      </section>
+      <section class="main-section" id="Hello,_World!"><header>Hello, World!</header>
+        <p>
+          Now that you’ve installed Rust, let’s write your first Rust program. It’s traditional when learning a new language to write a little program that prints the text <code>Hello, world!</code> to the screen, so we’ll do the same here!
+        </p>
+        <h2>Creating a Project Directory</h2>
+        <p>
+          You’ll start by making a directory to store your Rust code. It doesn’t matter to Rust where your code lives, but for the exercises and projects in this book, we suggest making a projects directory in your home directory and keeping all your projects there.
+
+          Open a terminal and enter the following commands to make a projects directory and a directory for the “Hello, world!” project within the projects directory.
+
+          For Linux, macOS, and PowerShell on Windows, enter this:
+        </p>
+        <p>
+        <code>
+          $ mkdir ~/projects<br>
+          $ cd ~/projects<br>
+          $ mkdir hello_world<br>
+          $ cd hello_world<br>
+        </code>
+        </p>
+        <p>For Windows CMD, enter this:</p>
+        <p><code>
+          > mkdir "%USERPROFILE%\projects"<br>
+          > cd /d "%USERPROFILE%\projects"<br>
+          > mkdir hello_world<br>
+          > cd hello_world<br>
+        </code></p>
+        <h2>Writing and Running a Rust Program</h2>
+        <p>Next, make a new source file and call it main.rs. Rust files always end with the .rs extension. If you’re using more than one word in your filename, use an underscore to separate them. For example, use hello_world.rs rather than helloworld.rs.</p>
+        <p>Now open the main.rs file you just created and enter the code in Listing 1-1.</p>
+        <p>Filename: main.rs</p>
+        <p><code>
+          fn main() {<br>
+            println!("Hello, world!");<br>
+          }<br>
+        </code></p>
+        <p>Save the file and go back to your terminal window. On Linux or macOS, enter the following commands to compile and run the file:</p>
+        <p><code>
+          $ rustc main.rs<br>
+          $ ./main<br>
+          Hello, world!<br>
+        </code></p>
+        <p>On Windows, enter the command <code>.\main.exe</code> instead of <code>./main</code>:</p>
+        <p><code>
+          > rustc main.rs<br>
+          > .\main.exe<br>
+          Hello, world!<br>
+        </code></p>
+        <p>Regardless of your operating system, the string <code>Hello, world!</code> should print to the terminal. If you don’t see this output, refer back to the “Troubleshooting” part of the Installation section for ways to get help.</p>
+        <p>If <code>Hello, world!</code> did print, congratulations! You’ve officially written a Rust program. That makes you a Rust programmer—welcome!</p>
+      </section>
+      <section class="main-section" id="Hello,_Cargo!"><header>Hello, Cargo!</header>
+        <p>
+          Cargo is Rust’s build system and package manager. Most Rustaceans use this tool to manage their Rust projects because Cargo handles a lot of tasks for you, such as building your code, downloading the libraries your code depends on, and building those libraries. (We call the libraries that your code needs dependencies.)
+        </p>
+        <p>
+          The simplest Rust programs, like the one we’ve written so far, don’t have any dependencies. So if we had built the “Hello, world!” project with Cargo, it would only use the part of Cargo that handles building your code. As you write more complex Rust programs, you’ll add dependencies, and if you start a project using Cargo, adding dependencies will be much easier to do.
+        </p>
+        <p>
+          Because the vast majority of Rust projects use Cargo, the rest of this book assumes that you’re using Cargo too. Cargo comes installed with Rust if you used the official installers discussed in the “Installation” section. If you installed Rust through some other means, check whether Cargo is installed by entering the following into your terminal:
+        </p>
+        <p>
+          <code>$ cargo --version</code>
+        </p>
+        <p>
+          If you see a version number, you have it! If you see an error, such as <code>command not found</code>, look at the documentation for your method of installation to determine how to install Cargo separately.
+        </p>
+      </section>
+      <section class="main-section" id="summary"><header>Summary</header>
+        <p>
+          You’re already off to a great start on your Rust journey! In this chapter, you’ve learned how to:
+        </p>
+        <p>
+          <ul>
+            <li>Install the latest stable version of Rust using <code>rustup</code></li>
+            <li>Update to a newer Rust version</li>
+            <li>Open locally installed documentation</li>
+            <li>Write and run a “Hello, world!” program using <code>rustc</code> directly</li>
+            <li>Create and run a new project using the conventions of Cargo</li>
+          </ul>
+          <p>
+            This is a great time to build a more substantial program to get used to reading and writing Rust code. So, in Chapter 2, we’ll build a guessing game program. If you would rather start by learning how common programming concepts work in Rust, see Chapter 3 and then return to Chapter 2.
+          </p>
+        </p>
+      </section>
+      <section class="main-section" id="notas"><header>Notas</header>
+        <p>
+          Os trechos acima foram tirados do livro <i><a href="https://doc.rust-lang.org/book/title-page.html">The Rust Programming Language</a></i>.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
