@@ -7,6 +7,7 @@ body {
 }
 
 main {
+	font-family: Verdana, sans-serif;
 	display: block;
 	color: rgb(0, 255, 0);
 	margin: auto;
@@ -22,25 +23,29 @@ main {
 	font-family: monospace;
 }
 
+h2 {
+	color: black;
+	margin-bottom: .5rem;
+	font-weight: normal;
+	font-size: 1.3rem;
+	border-bottom: 1px solid black;
+}
+
 .container {
 	background-color: rgba(255, 255, 255, .90);
 	padding: 1rem 2rem;
+	border-radius: 5px;
 }
 
-.form-container {
-	font-family: Verdana, sans-serif;
+.input-container {
 	color: black;
 	border: none;
-	margin: 0 1rem 0 1rem;
+	margin: 0 1rem 1rem 1rem;
 }
 
 p {
 	font-size: 1.1rem;
 	font-style: italic;
-}
-
-input {
-	margin: 0;
 }
 
 input[type=text],
@@ -51,19 +56,22 @@ select {
 	width: 100%;
 	padding: .50rem;
 	background-color: white;
-	color: rgb(0, 200, 0);
+	color: green;
 	font-family: monospace;
 	border: solid 0.15rem silver;
 	border-radius: 0.3rem;
 }
 
 input[type=radio],
-input[type=checkbox] {}
+input[type=checkbox]:checked {
+	accent-color: green;
+}
 
 input[type=submit] {
 	width: 100%;
 	color: green;
 	padding: 0.5rem;
+	margin: 1rem 0rem;
 }
 
 @media (max-width: 20rem) {

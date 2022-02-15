@@ -8,18 +8,27 @@
 <body>
 	<main>
 		<h1 id="title">Liga dos Hackers</h1>
-		<p id="description">É inevitável: seus dados vão vazar cedo ou tarde. Preencha o formulário e nos ajude a evitar a fadiga.</p>
+		<p id="description">É inevitável: seus dados vão vazar cedo ou tarde. Preencha o formulário e nos ajude a evitar a fadiga!</p>
 		<div class="container">
 			<form action="#" method="POST" id="survey-form">
-				<div class="form-container">
-					<p>Informações básicas</p>
+				<h2>Informações básicas</h2>
+				<div class="input-container">
 					<label for="name" id="name-label" required>Nome</label>
 					<input type="text" name="name" id="name" placeholder="Seu nome" required>
+				</div>
+
+				<div class="input-container">
 					<label for="email" id="email-label">E-mail</label>
 					<input type="email" name="email" id="email" placeholder="Seus e-mails"  required multiple>
+				</div>
+
+				<div class="input-container">
 					<label for="number" id="number-label">Idade</label>
 					<input type="number" name="number" id="number" min="13" max="128" placeholder="Sua idade" required>
+				</div>
 
+				<div class="input-container">
+					<!-- Precisava ter um menu dropdown e fiquei sem ideias... -->
 					<label for="dropdown">Cidade</label>
 					<select id="dropdown" name="dropdown">
 						<option value="none">Escolha uma cidade</option>
@@ -31,8 +40,8 @@
 					</select>
 				</div>
 
-				<div class="form-container">
-					<p>Sexo</p>
+				<div class="input-container">
+					<label for="sex">Sexo</label><br>
 					<input type="radio" name="sex" value="m" id="radio-sex-masc">
 					<label for="radio-sex-masc">Masculino</label><br>
 					<input type="radio" name="sex" value="f" id="radio-sex-fem">
@@ -41,19 +50,23 @@
 					<label for="radio-sex-none">Outro / não quero informar</label>
 				</div>
 
-				<div class="form-container">
-					<p>Você usa gerenciador de senhas?</p>
+				<h2>Suas senhas e contas online</h2>
+				<div class="input-container">
+					<label for="pss-manager">Você usa gerenciador de senhas?</label><br>
 					<input type="radio" name="pss-manager" id="radio-pss-manager-yes" value="y">
 					<label for="radio-pss-manager-yes">Sim</label><br>
-					<input type="radio" name="pss-manager" id="radio-pss-manager-yes" value="n">
+					<input type="radio" name="pss-manager" id="radio-pss-manager-no" value="n">
 					<label for="radio-pss-manager-no">Não</label><br>
-					<label for="text-pss-manager">Se sim qual(is)?</label><br>
+				</div>
+
+				<div class="input-container">
+					<label for="text-pss-manager file-pss-manager">Banco de senhas e chave mestra</label><br>
 					<input type="text" name="text-pss-manager" id="text-pss-manager"><br>
 					<input type="file" name="file-pss-manager">
 				</div>
 
-				<div class="form-container">
-					<p>Suas contas online</p>
+				<div class="input-container">
+					<label for="check-acc">Suas contas online</label><br>
 					<input type="checkbox" name="check-acc" id="check-acc-fb" value="fb">
 					<label for="check-acc-fb">Facebook</label><br>
 					<input type="checkbox" name="check-acc" id="check-acc-tt" value="tt">
@@ -66,17 +79,17 @@
 					<label for="check-acc-ot">Outras</label>
 				</div>
 
-				<div class="form-container">
-					<p>Insira suas senhas</p>
+				<div class="input-container">
+					<label for="pswd">Informações de login</label>
 					<textarea id="pswd" name="pswd" wrap="soft" maxlength="10240" rows="7" placeholder='"12345678", "brasil", "belinha" etc.'></textarea>
 				</div>
 
-				<div class="form-container">
-					<p>Informações adicionais</p>
+				<div class="input-container">
+					<label for="textarea-more">Informações adicionais</label>
 					<textarea id="textarea-more" name="textarea-more" wrap="soft" maxlength="10240" rows="7" placeholder="Contas de banco, INSS, segredos, a história da sua vida etc."></textarea>
 				</div>
 
-				<div class="form-container">
+				<div class="input-container">
 					<input type="submit" value="Enviar" id="submit">
 				</div>
 			</form>
