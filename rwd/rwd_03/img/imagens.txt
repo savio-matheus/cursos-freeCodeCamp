@@ -3,3 +3,5 @@
 <a href="https://www.flaticon.com/free-icons/low-price" title="low price icons">Low price icons created by Freepik - Flaticon</a>
 
 <a href="https://www.flaticon.com/free-icons/fast-delivery" title="fast delivery icons">Fast delivery icons created by Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/tick" title="tick icons">Tick icons created by Freepik - Flaticon</a>
