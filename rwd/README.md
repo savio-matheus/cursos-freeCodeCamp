@@ -1,5 +1,5 @@
 # Curso Web Design Responsivo
-Estes são os projetos que fiz para concluir o curso de web design do freeCodeCamp, conforme os entreguei para conseguir o [certificado](https://www.freecodecamp.org/certification/fcc442f5a01-f9d5-4eb1-bd3b-3406ab5c9b81/responsive-web-design).
+Estes são os projetos que fiz para concluir o curso de web design do [freeCodeCamp](https://www.freecodecamp.org/certification/fcc442f5a01-f9d5-4eb1-bd3b-3406ab5c9b81/responsive-web-design).
 
 ## Página de homenagem
 <p align="center"><img alt="Visualização da página em tributo a Dennis Ritchie, contendo sua foto e parte do texto." src="img/1_pagina_tributo.png" width="60%"></p>
